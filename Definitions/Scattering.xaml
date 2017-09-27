@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definitions.Scattering"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="597*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/download (8).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+
+        <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50" Text="Scattering:-" FontWeight="ExtraBold" Grid.Row="0"></TextBlock>
+        <ScrollViewer Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1" >
+            <TextBlock TextWrapping="Wrap" FontSize="30">
+                    <Run Text="In scattering, light is intercepted by an object and sent off in many directions; this movement may appear to be random and not following the law of reflection. Rayleigh scattering refers to the scattering of light by molecules in air, and is what causes the sky to have a blue color. Because this type of scattering is proportional to the 4th power of the frequency, blue light (which has the highest frequency of visible light) scatters the most. Rayleigh scattering can be considered an elastic collision of a photon with an atom or molecule. Another type, Raman scattering, is due to an inelastic collision with a molecule, and is used by chemists and physicists to measure the vibrational quantum state of molecules."></Run>
+            </TextBlock>
+        </ScrollViewer>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

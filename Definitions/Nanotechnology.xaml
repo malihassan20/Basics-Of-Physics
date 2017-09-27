@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definitions.Nanotechnology"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="597*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/images (10).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+
+        <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50" Text="Nanotechnology:-" FontWeight="ExtraBold" Grid.Row="0"></TextBlock>
+        <ScrollViewer Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1" >
+            <TextBlock TextWrapping="Wrap" FontSize="30">
+                    <Run Text="Nanotechnology is the study of controlling matter on the scale of 1 to 100 nanometers (a nanometer is one-billionth of a meter). The physical and chemical properties of many materials are new and unique at such small sizes (for reference, a human hair is approximately 100,000 nanometers thick), giving rise to a large number of promising technologies. The idea of nanotechnology is attributed to Richard P. Feynman, a physicist at the California Institute of Technology, who in 1959 presented a famous talk called 'There's Plenty of Room at the Bottom'.However, it wasn't until the 1980s that the necessary tools were developed to make nanotechnology a reality. Nanotechnology is a rapidly emerging field of study in areas including medicine, device physics, electronics, and computing."></Run>
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

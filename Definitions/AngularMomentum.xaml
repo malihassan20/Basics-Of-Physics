@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definitions.AngularMomentum"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="597*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/download (2).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+
+        <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Text="Angular Momentum:-" FontWeight="ExtraBold" Grid.Row="0"></TextBlock>
+        <ScrollViewer Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1" >
+            <TextBlock TextWrapping="Wrap" FontSize="30">
+                    <Run Text="Angular momentum is the counterpart to linear momentum for rotational motion. Any object moving around a point has angular momentum, and, like linear momentum, it is conserved. Angular momentum (L) is defined as the cross product of linear momentum, p, and the radius of the circular path (r): L=rxp = m*(rxv), where m is the mass of the object and v its velocity. As L, r, p, and v are all vectors, the right-hand rule is followed, making L point out of the plane of the object's path. The magnitude of L, the scalar L, is calculated by L = r*m*v*sinφ, where φ is the angle between r and p, and r and p are the magnitudes of the vectors r and p."></Run>
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

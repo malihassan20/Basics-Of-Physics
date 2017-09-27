@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definitions.Gravity"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="597*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/images (7).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+
+        <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50" Text="Gravity:-" FontWeight="ExtraBold" Grid.Row="0"></TextBlock>
+        <ScrollViewer Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1" >
+            <TextBlock TextWrapping="Wrap" FontSize="30">
+                    <Run Text="Gravity is the force that attracts objects with mass to one another. In everyday life, gravity keeps us 'attached' to the surface of the earth and gives objects their weight. Gravity also keeps planets orbiting the sun, and the moon orbiting earth. Albert Einstein's general theory of relativity describes gravity as the result of a warping of space-time. For non-relativistic systems, Isaac Newton's description of gravity accurately predicts the force of gravity (Fg) between any two masses with mass (m1 and m2) separated by some distance (r) to be proportional to the product of the masses and inversely proportional to the square of the distance between them. This can be written as Fg = Gm1m2/r2, where G is the gravitational constant."></Run>
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

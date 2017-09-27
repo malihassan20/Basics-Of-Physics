@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definitions.Momentum"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="597*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/images (8).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+
+        <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50" Text="Momentum:-" FontWeight="ExtraBold" Grid.Row="0"></TextBlock>
+        <ScrollViewer Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1" >
+            <TextBlock TextWrapping="Wrap" FontSize="30">
+                    <Run Text="Momentum, also called linear momentum, is a physical property equal to the mass of an object times its velocity; that is, p = mv. Physicists use momentum to measure the difficulty of stopping a moving body or system. The greater the momentum of an object, the harder it is to stop that object; for example, a falling boulder has greater momentum than a falling marble. Momentum is a vector quantity (it has direction and magnitude) and a conserved quantity: the total momentum of a system remains constant as long as no outside force acts on the objects in the system. Linear momentum is distinct from angular momentum, which is a rotational measurement of objects moving in a curved line relative to a point."></Run>
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

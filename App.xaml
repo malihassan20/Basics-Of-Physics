@@ -1,0 +1,34 @@
+﻿<Application
+    x:Class="Basics_Of_Physics.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <local:LocalizedStrings xmlns:local="clr-namespace:Basics_Of_Physics" x:Key="LocalizedStrings"/>
+        <ControlTemplate x:Key="BackPageNavigationStyle" TargetType="Button">
+        	<Grid>
+        		<VisualStateManager.VisualStateGroups>
+        			<VisualStateGroup x:Name="CommonStates">
+        				<VisualStateGroup.Transitions>
+        					<VisualTransition From="Pressed" GeneratedDuration="0" To="Disable"/>
+        				</VisualStateGroup.Transitions>
+        			</VisualStateGroup>
+        		</VisualStateManager.VisualStateGroups>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Go Back To DEFINITIONS" />
+        	</Grid>
+        </ControlTemplate>
+        
+        
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService
+            Launching="Application_Launching" Closing="Application_Closing"
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

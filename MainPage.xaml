@@ -1,0 +1,355 @@
+﻿<phone:PhoneApplicationPage x:Class="Basics_Of_Physics.MainPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            Orientation="Portrait"
+                            SupportedOrientations="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            mc:Ignorable="d">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="695*"/>
+        </Grid.RowDefinitions>
+
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/images (6).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="55"
+                       FontWeight="ExtraBold"
+                       Text="DEFINITIONS" Foreground="White" Grid.Row="0" />
+
+            <ScrollViewer Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <StackPanel  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Button  x:Name="btnDefinitionOfPhysics"
+                            Click="btnDefinitionOfPhysics_Click"
+                            Content="Physics"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button  x:Name="btnAcceleration"
+                            Click="btnAcceleration_Click"
+                            Content="Acceleration"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnAbsoluteZero"
+                            Click="btnAbsoluteZero_Click"
+                            Content="Absolute Zero"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnAngularMomentum"
+                            Click="btnAngularMomentum_Click"
+                            Content="Angular Momentum"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnAtom"
+                            Click="btnAtom_Click"
+                            Content="Atom"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnBigBang"
+                            Click="btnBigBang_Click"
+                            Content="Big Bang"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnBlackHoles"
+                            Click="btnBlackHoles_Click"
+                            Content="Black Holes"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnCentrifugalForce"
+                            Click="btnCentrifugalForce_Click"
+                            Content="Centrifugal Force"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnCentripetalForce"
+                            Click="btnCentripetalForce_Click"
+                            Content="Centripetal Force"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnChaos"
+                            Click="btnChaos_Click"
+                            Content="Chaos"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnClassicalMechanics"
+                            Click="btnClassicalMechanics_Click"
+                            Content="Classical Mechanics"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnConductivity"
+                            Click="btnConductivity_Click"
+                            Content="Conductivity"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnConservationOfEnergy"
+                            Click="btnConservationOfEnergy_Click"
+                            Content="Conservation Of Energy"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnCorrespondencePrinciple"
+                            Click="btnCorrespondencePrinciple_Click"
+                            Content="Correspondence Principle"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnEarthMagneticField"
+                            Click="btnEarthMagneticField_Click"
+                            Content="Earth Magnetic Field"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnElasticity"
+                            Click="btnElasticity_Click"
+                            Content="Elasticity"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnElectricity"
+                            Click="btnElectricity_Click"
+                            Content="Electricity"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnElectromagneticForce"
+                            Click="btnElectromagneticForce_Click"
+                            Content="Electromagnetic Force"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnElectromagneticRadiation"
+                            Click="btnElectromagneticRadiation_Click"
+                            Content="Electromagnetic Radiation"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnElectromagnetism"
+                            Click="btnElectromagnetism_Click"
+                            Content="Electromagnetism"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                    <Button x:Name="btnElectron"
+                            Click="btnElectron_Click"
+                            Content="Electron"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnEntropy"
+                            Click="btnEntropy_Click"
+                            Content="Entropy"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnFirstLawOfThermodynamics"
+                            Click="btnFirstLawOfThermodynamics_Click"
+                            Content="First Law Of Thermodynamics"
+                            FontSize="28"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnForce"
+                            Click="btnForce_Click"
+                            Content="Force"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnFriction"
+                            Click="btnFriction_Click"
+                            Content="Friction"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnGaussLaw"
+                            Click="btnGaussLaw_Click"
+                            Content="Gauss Law"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnGeneralRelativity"
+                            Click="btnGeneralRelativity_Click"
+                            Content="General Relativity"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnGravity"
+                            Click="btnGravity_Click"
+                            Content="Gravity"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnHeat"
+                            Click="btnHeat_Click"
+                            Content="Heat"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnHeisenbergUncertaintyPrinciple"
+                            Click="btnHeisenbergUncertaintyPrinciple_Click"
+                            Content="Heisenberg Uncertainty Principle"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnKineticEnergy"
+                            Click="btnKineticEnergy_Click"
+                            Content="Kinetic Energy"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnLaser"
+                            Click="btnLaser_Click"
+                            Content="Laser"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnLight"
+                            Click="btnLight_Click"
+                            Content="Light"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnMagnetism"
+                            Click="btnMagnetism_Click"
+                            Content="Magnetism"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnMass"
+                            Click="btnMass_Click"
+                            Content="Mass"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnMatter"
+                            Click="btnMatter_Click"
+                            Content="Matter"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnMaxwellLawsOfElectromagnetism"
+                            Click="btnMaxwellLawsOfElectromagnetism_Click"
+                            Content="Maxwell Laws Of Electromagnetism"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnMomentum"
+                            Click="btnMomentum_Click"
+                            Content="Momentum"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnNanotechnology"
+                            Click="btnNanotechnology_Click"
+                            Content="Nanotechnology"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnNeutrinos"
+                            Click="btnNeutrinos_Click"
+                            Content="Neutrinos"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnNeutron"
+                            Click="btnNeutron_Click"
+                            Content="Neutron"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnNecularFission"
+                            Click="btnNecularFission_Click"
+                            Content="Nuclear Fission"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnNecularFusion"
+                            Click="btnNecularFusion_Click"
+                            Content="Nuclear Fusion"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnOhmsLaw"
+                            Click="btnOhmsLaw_Click"
+                            Content="Ohm's Law"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnPhoton"
+                            Click="btnPhoton_Click"
+                            Content="Photon"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnPolarization"
+                            Click="btnPolarization_Click"
+                            Content="Polarization"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnPotentialEnergy"
+                            Click="btnPotentialEnergy_Click"
+                            Content="Potential Energy"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnProjectileMotion"
+                            Click="btnProjectileMotion_Click"
+                            Content="Projectile Motion"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnQuantization"
+                            Click="btnQuantization_Click"
+                            Content="Quantization"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnQuantumMechanics"
+                            Click="btnQuantumMechanics_Click"
+                            Content="Quantum Mechanics"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnReflection"
+                            Click="btnReflection_Click"
+                            Content="Reflection"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnRefraction"
+                            Click="btnRefraction_Click"
+                            Content="Refraction"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnScattering"
+                            Click="btnScattering_Click"
+                            Content="Scattering"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnSecondLawOfMotion"
+                            Click="btnSecondLawOfMotion_Click"
+                            Content="Second Law Of Motion"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnSecondLawOfThermodynamics"
+                            Click="btnSecondLawOfThermodynamics_Click"
+                            Content="Second Law Of Thermodynamics"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnSuperconductivity"
+                            Click="btnSuperconductivity_Click"
+                            Content="Superconductivity"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnTheoryOfRelativity"
+                            Click="btnTheoryOfRelativity_Click"
+                            Content="Theory Of Relativity"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnThermalEnergy"
+                            Click="btnThermalEnergy_Click"
+                            Content="Thermal Energy"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnThirdLawOfMotion"
+                            Click="btnThirdLawOfMotion_Click"
+                            Content="Third Law Of Motion"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnThirdLawOfThermodynamics"
+                            Click="btnThirdLawOfThermodynamics_Click"
+                            Content="Third Law Of Thermodynamics"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnWaveParticleDuality"
+                            Click="btnWaveParticleDuality_Click"
+                            Content="Wave Particle Duality"
+                            FontSize="25"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnWaves"
+                            Click="btnWaves_Click"
+                            Content="Waves"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+                <Button x:Name="btnWork"
+                            Click="btnWork_Click"
+                            Content="Work"
+                            FontSize="30"
+                            FontWeight="Bold" BorderBrush="#FF3E6B43" Foreground="White" />
+            </StackPanel>
+
+            </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

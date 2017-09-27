@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7286CDA5-3D71-4A5D-9AF9-0D4854A8FFBC}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Basics_Of_Physics</RootNamespace>
+    <AssemblyName>Basics Of Physics</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Basics_Of_Physics_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Basics_Of_Physics.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <ExpressionBlendVersion>12.0.50429.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\AbsoluteZero.xaml.cs">
+      <DependentUpon>AbsoluteZero.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Acceleration.xaml.cs">
+      <DependentUpon>Acceleration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\AngularMomentum.xaml.cs">
+      <DependentUpon>AngularMomentum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Atom.xaml.cs">
+      <DependentUpon>Atom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\BigBang.xaml.cs">
+      <DependentUpon>BigBang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\BlackHoles.xaml.cs">
+      <DependentUpon>BlackHoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\CentrifugalForce.xaml.cs">
+      <DependentUpon>CentrifugalForce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\CentripetalForce.xaml.cs">
+      <DependentUpon>CentripetalForce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Chaos.xaml.cs">
+      <DependentUpon>Chaos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ClassicalMechanics.xaml.cs">
+      <DependentUpon>ClassicalMechanics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Conductivity.xaml.cs">
+      <DependentUpon>Conductivity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ConservationOfEnergy.xaml.cs">
+      <DependentUpon>ConservationOfEnergy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\CorrespondencePrinciple.xaml.cs">
+      <DependentUpon>CorrespondencePrinciple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Definition_OF_Physics.xaml.cs">
+      <DependentUpon>Definition_OF_Physics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\EarthMagneticField.xaml.cs">
+      <DependentUpon>EarthMagneticField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Elasticity.xaml.cs">
+      <DependentUpon>Elasticity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Electricity.xaml.cs">
+      <DependentUpon>Electricity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ElectromagneticForce.xaml.cs">
+      <DependentUpon>ElectromagneticForce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ElectromagneticRadiation.xaml.cs">
+      <DependentUpon>ElectromagneticRadiation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Electromagnetism.xaml.cs">
+      <DependentUpon>Electromagnetism.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Electron.xaml.cs">
+      <DependentUpon>Electron.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Entropy.xaml.cs">
+      <DependentUpon>Entropy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\FirstLawOfMotion.xaml.cs">
+      <DependentUpon>FirstLawOfMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\FirstLawOfThermodynamics.xaml.cs">
+      <DependentUpon>FirstLawOfThermodynamics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Force.xaml.cs">
+      <DependentUpon>Force.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Friction.xaml.cs">
+      <DependentUpon>Friction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\GaussLaw.xaml.cs">
+      <DependentUpon>GaussLaw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\GeneralRelativity.xaml.cs">
+      <DependentUpon>GeneralRelativity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Gravity.xaml.cs">
+      <DependentUpon>Gravity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Heat.xaml.cs">
+      <DependentUpon>Heat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\HeisenbergUncertaintyPrinciple.xaml.cs">
+      <DependentUpon>HeisenbergUncertaintyPrinciple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\KineticEnergy.xaml.cs">
+      <DependentUpon>KineticEnergy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Laser.xaml.cs">
+      <DependentUpon>Laser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Light.xaml.cs">
+      <DependentUpon>Light.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Magnetism.xaml.cs">
+      <DependentUpon>Magnetism.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Mass.xaml.cs">
+      <DependentUpon>Mass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Matter.xaml.cs">
+      <DependentUpon>Matter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\MaxwellLawsOfElectromagnetism.xaml.cs">
+      <DependentUpon>MaxwellLawsOfElectromagnetism.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Momentum.xaml.cs">
+      <DependentUpon>Momentum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Nanotechnology.xaml.cs">
+      <DependentUpon>Nanotechnology.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Neutrinos.xaml.cs">
+      <DependentUpon>Neutrinos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Neutron.xaml.cs">
+      <DependentUpon>Neutron.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\NuclearFission.xaml.cs">
+      <DependentUpon>NuclearFission.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\NuclearFusion.xaml.cs">
+      <DependentUpon>NuclearFusion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\OhmsLaw.xaml.cs">
+      <DependentUpon>OhmsLaw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Photon.xaml.cs">
+      <DependentUpon>Photon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Polarization.xaml.cs">
+      <DependentUpon>Polarization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\PotentialEnergy.xaml.cs">
+      <DependentUpon>PotentialEnergy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ProjectileMotion.xaml.cs">
+      <DependentUpon>ProjectileMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Quantization.xaml.cs">
+      <DependentUpon>Quantization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\QuantumMechanics.xaml.cs">
+      <DependentUpon>QuantumMechanics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Reflection.xaml.cs">
+      <DependentUpon>Reflection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Refraction.xaml.cs">
+      <DependentUpon>Refraction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Scattering.xaml.cs">
+      <DependentUpon>Scattering.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\SecondLawOfMotion.xaml.cs">
+      <DependentUpon>SecondLawOfMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\SecondLawOfThermodynamics.xaml.cs">
+      <DependentUpon>SecondLawOfThermodynamics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Superconductivity.xaml.cs">
+      <DependentUpon>Superconductivity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\TheoryOfRelativity.xaml.cs">
+      <DependentUpon>TheoryOfRelativity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ThermalEnergy.xaml.cs">
+      <DependentUpon>ThermalEnergy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ThirdLawOfMotion.xaml.cs">
+      <DependentUpon>ThirdLawOfMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\ThirdLawOfThermodynamics.xaml.cs">
+      <DependentUpon>ThirdLawOfThermodynamics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\WaveParticleDuality.xaml.cs">
+      <DependentUpon>WaveParticleDuality.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Waves.xaml.cs">
+      <DependentUpon>Waves.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions\Work.xaml.cs">
+      <DependentUpon>Work.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Definitions\AbsoluteZero.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Acceleration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\AngularMomentum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Atom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\BigBang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\BlackHoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\CentrifugalForce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\CentripetalForce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Chaos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ClassicalMechanics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Conductivity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ConservationOfEnergy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\CorrespondencePrinciple.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Definition_OF_Physics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\EarthMagneticField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Elasticity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Electricity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ElectromagneticForce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ElectromagneticRadiation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Electromagnetism.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Electron.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Entropy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\FirstLawOfMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\FirstLawOfThermodynamics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Force.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Friction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\GaussLaw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\GeneralRelativity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Gravity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Heat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\HeisenbergUncertaintyPrinciple.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\KineticEnergy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Laser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Light.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Magnetism.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Mass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Matter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\MaxwellLawsOfElectromagnetism.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Momentum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Nanotechnology.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Neutrinos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Neutron.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\NuclearFission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\NuclearFusion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\OhmsLaw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Photon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Polarization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\PotentialEnergy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ProjectileMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Quantization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\QuantumMechanics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Reflection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Refraction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Scattering.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\SecondLawOfMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\SecondLawOfThermodynamics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Superconductivity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\TheoryOfRelativity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ThermalEnergy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ThirdLawOfMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\ThirdLawOfThermodynamics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\WaveParticleDuality.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Waves.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Definitions\Work.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PhysicsImages\Thumbs.db" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PhysicsImages\download %281%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %282%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %283%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %284%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %285%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %286%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %287%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download %288%29.jpg" />
+    <Content Include="Assets\PhysicsImages\download.jpg" />
+    <Content Include="Assets\PhysicsImages\go.jpg" />
+    <Content Include="Assets\PhysicsImages\Hiyaa-Martial-Art-Podcast-Episode-40-Physics.jpg" />
+    <Content Include="Assets\PhysicsImages\images %281%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2810%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2811%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2812%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2813%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2814%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2815%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2816%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2817%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2818%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2819%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %282%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2820%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2821%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2822%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %2823%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %283%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %284%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %285%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %286%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %287%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %288%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images %289%29.jpg" />
+    <Content Include="Assets\PhysicsImages\images.jpg" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\icon.jpg" />
+    <Content Include="Assets\Tiles\icon.png" />
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\large.jpg" />
+    <Content Include="Assets\Tiles\medium.jpg" />
+    <Content Include="Assets\Tiles\small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="System.Windows.Interactivity" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

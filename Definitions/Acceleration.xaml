@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definitions.Acceleration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="597*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/images (2).jpg"
+               Stretch="Fill" Grid.Row="0" Grid.RowSpan="2" />
+
+            <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50" Text="Acceleration:-" FontWeight="ExtraBold" Grid.Row="0"></TextBlock>
+            <ScrollViewer Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1" >
+                <TextBlock TextWrapping="Wrap" FontSize="30">
+                    <Run Text="Acceleration is the rate of change of velocity with time. Average acceleration is found by dividing the change in velocity by the change in time (Δv/Δt). In calculus, instantaneous acceleration is the first derivative of velocity with respect to time (dv/dt). While most commonly referring to an increase in speed, because velocity is a vector, a body accelerates when it speeds up or slows down or changes direction. For example, if you drive in a circle at constant speed you are constantly accelerating (which is why you feel 'pushed' to the outside of the circle). The SI units of acceleration are meters per second squared (m/s2)."></Run>
+                </TextBlock>
+            </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,33 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Basics_Of_Physics.Definition_OF_Physics"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Opacity="0.7"
+               Source="/Assets/PhysicsImages/images (2).jpg"
+               Stretch="Fill" Grid.RowSpan="2" />
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.RowSpan="3">
+            <TextBlock Foreground="White" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50" Text="Physics:-" FontWeight="ExtraBold"></TextBlock>
+            <TextBlock Foreground="White" Grid.Row="1" TextWrapping="Wrap" FontSize="30" Text="The branch of science that deals with the study of matter,energy and force.It is the branch of science concerned with the properties of matter,energy and the relationships between them. It is based on mathematics and traditionally includes mechanics, optics, electricity and magnetism, acoustics, and heat. Modern physics, based on quantum theory, includes atomic, nuclear, particle, and solid-state studies. It can also embrace applied fields such as geophysics and meteorology."></TextBlock>
+        </StackPanel>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
